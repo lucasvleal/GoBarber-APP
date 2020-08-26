@@ -115,8 +115,6 @@ const CreateAppointment: React.FC = () => {
 
       const dateFormatted = format(date, 'yyyy-MM-dd HH:mm');
 
-      console.log(date, selectedProvider);
-
       await api.post('/appointments', {
         provider_id: selectedProvider,
         date: dateFormatted,
